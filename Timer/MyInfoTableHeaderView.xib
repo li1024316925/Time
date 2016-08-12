@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyInfoTableHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="250"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="irk-8P-bEg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="125"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHa-0C-kPF">
+                            <rect key="frame" x="26" y="17" width="100" height="100"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="KiN-Ai-nV7"/>
+                                <constraint firstAttribute="width" constant="100" id="vUm-3H-A12"/>
+                            </constraints>
+                            <state key="normal" backgroundImage="icon_avatar_not_login.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbi-Pl-WqZ">
+                            <rect key="frame" x="151" y="49" width="70" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="Vd6-tg-BYk"/>
+                                <constraint firstAttribute="width" constant="70" id="fhS-Tn-alK"/>
+                            </constraints>
+                            <state key="normal" title="登录" backgroundImage="icon_hot_show_buy.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hoX-nE-nL1">
+                            <rect key="frame" x="241" y="49" width="70" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="70" id="kPz-Vf-Eb2"/>
+                                <constraint firstAttribute="height" constant="35" id="v5J-cb-bCC"/>
+                            </constraints>
+                            <state key="normal" title="注册" backgroundImage="icon_change_subway@2x.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.91119695050000005" blue="0.14574561920000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="hoX-nE-nL1" firstAttribute="height" secondItem="Cbi-Pl-WqZ" secondAttribute="height" id="0tL-be-Xws"/>
+                        <constraint firstItem="hoX-nE-nL1" firstAttribute="top" secondItem="irk-8P-bEg" secondAttribute="top" constant="49" id="6yd-2r-Qok"/>
+                        <constraint firstItem="Cbi-Pl-WqZ" firstAttribute="leading" secondItem="yHa-0C-kPF" secondAttribute="trailing" constant="25" id="Avw-pR-d42"/>
+                        <constraint firstAttribute="height" constant="125" id="DnE-bx-MtX"/>
+                        <constraint firstItem="hoX-nE-nL1" firstAttribute="leading" secondItem="Cbi-Pl-WqZ" secondAttribute="trailing" constant="20" id="Fgc-sa-JG8"/>
+                        <constraint firstItem="hoX-nE-nL1" firstAttribute="width" secondItem="Cbi-Pl-WqZ" secondAttribute="width" id="M0n-pG-HlD"/>
+                        <constraint firstItem="yHa-0C-kPF" firstAttribute="top" secondItem="irk-8P-bEg" secondAttribute="top" constant="17" id="Qoc-CR-lbd"/>
+                        <constraint firstItem="Cbi-Pl-WqZ" firstAttribute="top" secondItem="irk-8P-bEg" secondAttribute="top" constant="49" id="X1X-Vc-hd9"/>
+                        <constraint firstItem="yHa-0C-kPF" firstAttribute="leading" secondItem="irk-8P-bEg" secondAttribute="leading" constant="26" id="yvl-mU-Wc0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v1q-rY-vbk">
+                    <rect key="frame" x="0.0" y="125" width="414" height="125"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLL-bt-0Xa">
+                            <rect key="frame" x="152" y="3" width="110" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="4Ha-UA-vvz"/>
+                                <constraint firstAttribute="width" constant="110" id="uex-3U-lRz"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-37" minY="83" maxX="4" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="36" minY="0.0" maxX="17" maxY="15"/>
+                            <state key="normal" title="电影票订单" image="icon_my_movie_order.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhr-Jh-3Oh">
+                            <rect key="frame" x="262" y="5" width="110" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="120" id="5lL-iX-Nte"/>
+                                <constraint firstAttribute="width" constant="110" id="ntO-fp-FZg"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-31" minY="83" maxX="12" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="36" minY="0.0" maxX="30" maxY="15"/>
+                            <state key="normal" title="商品订单" image="icon_my_goods_order.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1a-c5-6Ws">
+                            <rect key="frame" x="42" y="3" width="110" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="6cR-gp-aA4"/>
+                                <constraint firstAttribute="height" constant="120" id="Ysn-6N-jhA"/>
+                            </constraints>
+                            <inset key="titleEdgeInsets" minX="-24" minY="83" maxX="22" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="36" minY="0.0" maxX="30" maxY="15"/>
+                            <state key="normal" title="购物车" image="icon_my_shopping_cart.png">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="OLL-bt-0Xa" firstAttribute="top" secondItem="v1q-rY-vbk" secondAttribute="top" constant="3" id="BSp-SP-LxW"/>
+                        <constraint firstAttribute="height" constant="125" id="CJK-0r-v0m"/>
+                        <constraint firstItem="yhr-Jh-3Oh" firstAttribute="leading" secondItem="OLL-bt-0Xa" secondAttribute="trailing" id="Fy2-7y-kY6"/>
+                        <constraint firstItem="OLL-bt-0Xa" firstAttribute="leading" secondItem="B1a-c5-6Ws" secondAttribute="trailing" id="Jpg-O1-yWU"/>
+                        <constraint firstItem="yhr-Jh-3Oh" firstAttribute="top" secondItem="v1q-rY-vbk" secondAttribute="top" constant="5" id="PKo-1N-tm6"/>
+                        <constraint firstItem="B1a-c5-6Ws" firstAttribute="top" secondItem="v1q-rY-vbk" secondAttribute="top" constant="3" id="jWl-Aa-5bZ"/>
+                        <constraint firstItem="OLL-bt-0Xa" firstAttribute="centerX" secondItem="v1q-rY-vbk" secondAttribute="centerX" id="sEE-jl-n5E"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="irk-8P-bEg" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Ds-XW-6ze"/>
+                <constraint firstAttribute="trailing" secondItem="v1q-rY-vbk" secondAttribute="trailing" id="1QJ-5R-qma"/>
+                <constraint firstItem="v1q-rY-vbk" firstAttribute="top" secondItem="irk-8P-bEg" secondAttribute="bottom" id="2Bz-WL-1by"/>
+                <constraint firstItem="v1q-rY-vbk" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Kul-fY-qUd"/>
+                <constraint firstAttribute="trailing" secondItem="irk-8P-bEg" secondAttribute="trailing" id="XKG-vx-ypL"/>
+                <constraint firstItem="irk-8P-bEg" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="seh-Xz-XOy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="view" destination="irk-8P-bEg" id="hXq-b5-g8H"/>
+            </connections>
+            <point key="canvasLocation" x="294" y="215"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_avatar_not_login.png" width="55" height="55"/>
+        <image name="icon_change_subway@2x.png" width="37" height="37"/>
+        <image name="icon_hot_show_buy.png" width="75" height="29"/>
+        <image name="icon_my_goods_order.png" width="45" height="45"/>
+        <image name="icon_my_movie_order.png" width="45" height="45"/>
+        <image name="icon_my_shopping_cart.png" width="45" height="45"/>
+    </resources>
+</document>
